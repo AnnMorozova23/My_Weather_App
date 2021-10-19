@@ -7,7 +7,9 @@ import kotlinx.parcelize.Parcelize
 data class Weather(
     val city: City = getDefaultCity(),
     val temperature: Int = 0,
-    val feelsLike: Int = 0
+    val feelsLike: Int = 0,
+    val condition: String? = "Неизвестно"
+
 
 ) : Parcelable
 
