@@ -9,8 +9,8 @@ import com.example.myweatherapp.databinding.FragmentMainRecyclerItemBinding
 import com.example.myweatherapp.modul.entities.Weather
 import com.example.myweatherapp.ui.main.MainFragment
 
-class MainFragmentAdapter (private val itemClickListener: MainFragment.OnItemViewClickListener)
-    : RecyclerView.Adapter<MainFragmentAdapter.MainViewHolder>() {
+class MainFragmentAdapter(private val itemClickListener: MainFragment.OnItemViewClickListener) :
+    RecyclerView.Adapter<MainFragmentAdapter.MainViewHolder>() {
 
     private var weatherData: List<Weather> = listOf()
     private lateinit var binding: FragmentMainRecyclerItemBinding
