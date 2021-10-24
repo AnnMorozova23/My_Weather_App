@@ -36,7 +36,7 @@ class DetailsFragment : Fragment() {
                     it.city.lat.toString(),
                     it.city.lon.toString()
                 )
-                viewModel.liveDataToObserver.observe(viewLifecycleOwner, { appState ->
+                viewModel.liveDataToObserve.observe(viewLifecycleOwner, { appState ->
                     when (appState) {
                         is AppState.Error -> {
                             mainView.visibility = View.INVISIBLE
