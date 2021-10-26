@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import coil.load
 import com.example.myweatherapp.R
 import com.example.myweatherapp.databinding.DetailsFragmentBinding
 import com.example.myweatherapp.modul.entities.Weather
@@ -62,6 +63,8 @@ class DetailsFragment : Fragment() {
                 viewModel.loadData(it.city.lat, it.city.lon)
             }
         }
+
+        binding.imageView.load("https://freepngimg.com/thumb/city/36275-3-city-hd.png")
 
     }
 
