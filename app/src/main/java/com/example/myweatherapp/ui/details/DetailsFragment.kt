@@ -60,7 +60,7 @@ class DetailsFragment : Fragment() {
                         }
                     }
                 })
-                viewModel.loadData(it.city.lat, it.city.lon)
+                viewModel.loadData(it.city)
             }
         }
 
