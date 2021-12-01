@@ -13,4 +13,6 @@
     <string name="default_number">1</string>
     <string name="in_main_thread">В главном потоке</string>
     <string name="history">История</string>
+    <string name="content_provider">Контакты</string>
+    <string name="need_permissions_to_read_contacts">Необходимо предостваить разрешение на чтение контактов</string>
 </resources>
