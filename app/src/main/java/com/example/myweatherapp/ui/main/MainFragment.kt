@@ -18,7 +18,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.myweatherapp.R
-import com.example.myweatherapp.databinding.MainFragmentBinding
+import com.example.myweatherapp.databinding.FragmentMainBinding
 import com.example.myweatherapp.modul.entities.City
 import com.example.myweatherapp.modul.entities.Weather
 import com.example.myweatherapp.ui.AppState
@@ -39,7 +39,7 @@ private const val dataSetKey = "dataSetKey"
 class MainFragment : Fragment(),  CoroutineScope by MainScope() {
     private val viewModel: MainViewModel by viewModel()
 
-    private var _binding: MainFragmentBinding? = null
+    private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
     private var adapter: MainFragmentAdapter? = null
@@ -75,7 +75,7 @@ class MainFragment : Fragment(),  CoroutineScope by MainScope() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = MainFragmentBinding.inflate(inflater, container, false)
+        _binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
     }
 
